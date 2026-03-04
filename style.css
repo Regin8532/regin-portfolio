@@ -1,0 +1,48 @@
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.9s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+
+/* Sticky Navbar Blur */
+.nav-active {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .nav-active {
+    background: rgba(2, 6, 23, 0.85);
+    border-bottom: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+/* Glassmorphism Logic */
+.glass {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+}
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.6);
+}
+
+/* Swiper Styling */
+.swiper-pagination-bullet-active {
+    background: #6366F1 !important;
+    width: 20px !important;
+    border-radius: 5px !important;
+}
+
+/* Colored Icons Glow */
+.devicon-java-plain:hover { filter: drop-shadow(0 0 8px #ED8B00); }
+.devicon-spring-original:hover { filter: drop-shadow(0 0 8px #6DB33F); }

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regin V | Java Full Stack Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: { sans: ["Poppins", "sans-serif"] },
+                    colors: { primary: "#6366F1", secondary: "#22C55E" },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-500">
+
+    <header class="fixed top-0 w-full z-50 transition-all duration-300 shadow-sm" id="navbar">
+        <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-lg">
+                    <span class="text-white font-bold">R</span>
+                </div>
+                <span class="font-bold text-lg tracking-tight uppercase">Regin V</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#skills" class="hover:text-primary transition">Skills</a>
+                <a href="#projects" class="hover:text-primary transition">Projects</a>
+                <a href="#experience" class="hover:text-primary transition">Experience</a>
+                <a href="#certifications" class="hover:text-primary transition">Certifications</a>
+                <button id="theme-toggle" class="ml-4 p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-yellow-400">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20 text-center relative">
+        <div class="max-w-4xl reveal">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase">
+                Java Developer | Fresher
+            </div>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter">
+                Hello, I'm <span class="text-primary">Regin V</span>
+            </h1>
+            <h3 class="text-2xl md:text-3xl font-medium mb-10 text-slate-600 dark:text-slate-400">
+                Building with <span id="typing-text" class="text-secondary font-bold"></span>
+            </h3>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="assets/resume.pdf" download="Regin_V_Resume.pdf" class="px-8 py-4 bg-primary text-white rounded-2xl font-bold shadow-xl shadow-primary/30 hover:-translate-y-1 transition-all flex items-center gap-3">
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download Resume
+                </a>
+                <a href="https://github.com/Regin8532" target="_blank" class="px-8 py-4 border-2 border-slate-200 dark:border-slate-800 rounded-2xl font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-[0.8fr,1.2fr] gap-16 items-center">
+            <div class="reveal flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-primary to-secondary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden border-8 border-white dark:border-slate-900 shadow-2xl">
+                        <img src="assets/profile.jpg" alt="Regin V" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+            <div class="reveal delay-200">
+                <h2 class="text-4xl font-bold mb-6">About <span class="text-primary">Me</span></h2>
+                <p class="text-slate-600 dark:text-slate-400 mb-8 leading-loose text-lg">
+                    I am a Bachelor of Engineering graduate in **Electronics and Communication** with a deep passion for **Java Full Stack Development**. I specialize in building scalable backend systems using **Spring Boot**, **Hibernate**, and **MySQL**. I have hands-on experience through internships and projects in creating real-time business solutions, emphasizing clean code, MVC architecture, and layered design.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-3">
+                        <i class="fa-solid fa-code text-primary"></i>
+                        <span class="font-bold text-sm uppercase">OOPS</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-3">
+                        <i class="fa-solid fa-bolt text-secondary"></i>
+                        <span class="font-bold text-sm uppercase">Problem Solver</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-100 dark:bg-slate-900/40">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center reveal tracking-tight">Technical <span class="text-primary">Stack</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 bg-white dark:bg-slate-950 rounded-[2.5rem] reveal border border-slate-200 dark:border-slate-800 shadow-xl group hover:border-primary transition">
+                    <h3 class="font-bold text-xl mb-8 text-primary flex items-center gap-3"><i class="fa-solid fa-server"></i> Backend & Frameworks</h3>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-java-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Java</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-spring-original colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Spring</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-hibernate-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-white dark:bg-slate-950 rounded-[2.5rem] reveal border border-slate-200 dark:border-slate-800 shadow-xl group hover:border-secondary transition">
+                    <h3 class="font-bold text-xl mb-8 text-secondary flex items-center gap-3"><i class="fa-solid fa-database"></i> Database & Persistence</h3>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-mysql-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">MySQL</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-php-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">PHP</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="fa-solid fa-network-wired text-4xl text-slate-400"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-white dark:bg-slate-950 rounded-[2.5rem] reveal border border-slate-200 dark:border-slate-800 shadow-xl group hover:border-primary transition">
+                    <h3 class="font-bold text-xl mb-8 text-primary flex items-center gap-3"><i class="fa-solid fa-laptop-code"></i> Web Technologies</h3>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-react-original colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">React JS</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-html5-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">HTML5</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-tailwindcss-original colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-white dark:bg-slate-950 rounded-[2.5rem] reveal border border-slate-200 dark:border-slate-800 shadow-xl group hover:border-secondary transition">
+                    <h3 class="font-bold text-xl mb-8 text-secondary flex items-center gap-3"><i class="fa-solid fa-screwdriver-wrench"></i> Workflow & Testing</h3>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-git-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Git</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-maven-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Maven</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 transition hover:scale-110">
+                            <i class="devicon-flutter-plain colored text-5xl"></i>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16 reveal">My <span class="text-primary">Portfolio</span></h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="reveal glass p-8 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 group hover:-translate-y-2 transition-all">
+                <div class="flex gap-2 mb-6">
+                    <i class="devicon-spring-original colored text-xl"></i>
+                    <i class="devicon-mysql-plain colored text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 tracking-tight">SmartSpend</h3>
+                <p class="text-xs text-slate-500 mb-6 leading-relaxed">Expense Tracker with Spring Boot backend, layered architecture, and JPA persistence for monthly budget visualization.</p>
+                <div class="flex gap-4 border-t border-slate-100 dark:border-slate-800 pt-6">
+                    <a href="https://github.com/Regin8532" class="text-xs font-bold uppercase hover:text-primary">GitHub</a>
+                </div>
+            </div>
+            <div class="reveal glass p-8 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 group hover:-translate-y-2 transition-all delay-100">
+                <div class="flex gap-2 mb-6">
+                    <i class="devicon-java-plain colored text-xl"></i>
+                    <i class="devicon-spring-original colored text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 tracking-tight">Event Management</h3>
+                <p class="text-xs text-slate-500 mb-6 leading-relaxed">Role-based web app using Spring Security for session-based auth and REST APIs for event registrations.</p>
+                <div class="flex gap-4 border-t border-slate-100 dark:border-slate-800 pt-6">
+                    <a href="https://github.com/Regin8532" class="text-xs font-bold uppercase hover:text-primary">GitHub</a>
+                </div>
+            </div>
+            <div class="reveal glass p-8 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 group hover:-translate-y-2 transition-all delay-200">
+                <div class="flex gap-2 mb-6">
+                    <i class="devicon-react-original colored text-xl"></i>
+                    <i class="devicon-mysql-plain colored text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 tracking-tight">RealNest</h3>
+                <p class="text-xs text-slate-500 mb-6 leading-relaxed">A full-stack real estate listing platform focused on intelligent property filtering and secure admin modules.</p>
+                <div class="flex gap-4 border-t border-slate-100 dark:border-slate-800 pt-6">
+                    <a href="https://github.com/Regin8532" class="text-xs font-bold uppercase hover:text-primary">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-slate-50 dark:bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-12 reveal">
+                    <h3 class="text-3xl font-bold flex items-center gap-3"><i class="fa-solid fa-graduation-cap text-primary"></i> Education</h3>
+                    <div class="border-l-2 border-slate-200 dark:border-slate-800 pl-8 space-y-10">
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-4 w-4 rounded-full bg-primary border-4 border-slate-50 dark:border-slate-950"></div>
+                            <h4 class="font-bold text-lg">B.E. Electronics and Communication</h4>
+                            <p class="text-sm text-primary font-semibold mt-2">St. Xavier's Catholic College of Engineering</p>
+                            <p class="text-sm font-bold text-secondary mt-2">CGPA: 7.54</p>
+                            <p class="text-xs text-slate-400 mt-1">2021 — 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-12 reveal delay-200">
+                    <h3 class="text-3xl font-bold flex items-center gap-3"><i class="fa-solid fa-briefcase text-secondary"></i> Experience</h3>
+                    <div class="border-l-2 border-slate-200 dark:border-slate-800 pl-8 space-y-10">
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-4 w-4 rounded-full bg-secondary border-4 border-slate-50 dark:border-slate-950 shadow-[0_0_10px_#22C55E]"></div>
+                            <h4 class="font-bold text-lg leading-none">Web Development Intern (PHP)</h4>
+                            <p class="text-sm text-primary font-semibold mt-2">Infiniti Software Solutions | 2025</p>
+                            <p class="text-[11px] text-slate-500 mt-3 leading-relaxed">Worked on internal Scrum Management Tool using PHP/MySQL. Enhanced backend logic and query optimization.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 h-4 w-4 rounded-full bg-secondary border-4 border-slate-50 dark:border-slate-950 shadow-[0_0_10px_#22C55E]"></div>
+                            <h4 class="font-bold text-lg leading-none">Flutter Developer Intern</h4>
+                            <p class="text-sm text-secondary font-semibold mt-2">FlutterFrog Software Solutions | 2024</p>
+                            <p class="text-[11px] text-slate-500 mt-3 leading-relaxed">Created responsive UIs and application logic. Maintained codebase structure and OOP standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="py-24 bg-slate-100 dark:bg-slate-900/30 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center reveal tracking-tight">Professional <span class="text-primary">Credentials</span></h2>
+            <div class="swiper certSwiper reveal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:border-primary transition">
+                            <i class="fa-solid fa-certificate text-4xl text-primary mb-4"></i>
+                            <h4 class="font-bold">Java Full Stack</h4>
+                            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">GUVI Certified</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:border-secondary transition">
+                            <i class="fa-solid fa-award text-4xl text-secondary mb-4"></i>
+                            <h4 class="font-bold">Agile Fundamentals</h4>
+                            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">GUVI Certified</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4">
+                        <div class="bg-white dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 text-center hover:border-primary transition">
+                            <i class="fa-solid fa-medal text-4xl text-primary mb-4"></i>
+                            <h4 class="font-bold">Spring Framework</h4>
+                            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">Udemy Professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800 text-center">
+        <div class="flex justify-center gap-6 mb-4 text-2xl">
+            <a href="https://github.com/Regin8532" target="_blank" class="text-slate-400 hover:text-primary transition"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/reginv/" target="_blank" class="text-slate-400 hover:text-primary transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:regin8532@gmail.com" class="text-slate-400 hover:text-primary transition"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="text-slate-500 text-[10px] tracking-widest uppercase">© 2026 Regin V • Nagercoil, India</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
